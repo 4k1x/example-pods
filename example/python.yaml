@@ -1,0 +1,15 @@
+docker run -it python "python -c 'import time; time.sleep(10)'"
+apiVersion: v1
+kind: Pod
+metadata:
+  name: python
+spec:
+  containers:
+  - name: python
+    image: python
+    command:
+      - /bin/sh
+      - "-c"
+      - "sleep 60m"
+    imagePullPolicy: IfNotPresent
+  restartPolicy: Always
