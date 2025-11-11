@@ -13,9 +13,9 @@ spec:
     name: alpine
     resources:
       requests: 
-        memory: "1Gi"
+        memory: 1Gi
         cpu: "1"
       limits:
-        memory: "2Gi"
+        memory: 2Gi
         cpu: "2"
   restartPolicy: Always
